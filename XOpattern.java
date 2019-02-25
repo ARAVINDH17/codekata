@@ -24,16 +24,9 @@ public class XO_pattern {
 			arr[i][a]=x;}
 		
 		for(int b=i;b<temp+i;b++){
-         arr[a-1][b]=x;
-		}
-	
-		for(int c=i;c<temp+i;c++){
-			arr[c][i]=x;
-		}
-		
-	
-		for(int d=i;d<temp+i;d++){
-			arr[d][a-1]=x;
+			arr[b][a-1]=x;
+			arr[b][i]=x;
+			arr[a-1][b]=x;
 		}
 		
 	}
