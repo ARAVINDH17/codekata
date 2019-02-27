@@ -27,7 +27,7 @@ public class sort_element_usingFac {
             subarr++;
     }
    
-   int b[][]=new int[subarr][2];
+   int b[][]=new int[subarr][2];//"b" is sub array;
    int count=0,k=0;
    /* calculate frequency of each unique value
     * insert into sub array
