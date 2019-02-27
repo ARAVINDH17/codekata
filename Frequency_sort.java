@@ -1,6 +1,6 @@
 package zoho;
 import java.util.*;
-public class sort_element_usingFac {
+public class frequency_sort{
 
 
     public static void main(String[] args) {
