@@ -53,8 +53,6 @@ public class frequency_sort{
 		   }
 	   }
    }
-   
-  
     for(int i=0;i<subarr;i++) {
     	for(int j=0;j<b[i][1];j++) {
     		System.out.print(b[i][0]+" ");
@@ -62,6 +60,6 @@ public class frequency_sort{
     
     }
     
-    } 
+     } 
 
 }
