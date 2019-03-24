@@ -1,0 +1,39 @@
+import java.util.*;
+public class palindrome {
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		char a[]=s.toCharArray();
+		int i,j;
+		char tem='*';
+		boolean bol=true;
+		for(i=0,j=a.length-1;i<=j&&(bol==true);i++,j--) {
+			if(a[i]!=a[j]) {
+				tem=a[i];
+				a[i]=a[j];//delete and insert
+			}
+			bol=check(a,a.length);
+			if(bol) {
+				for(int k=0;k<a.length;k++) {
+					System.out.print(a[k]);
+					bol=false;
+				}
+			}
+			else {
+				a[i]=tem;
+			}
+			
+		}
+	}
+	public static boolean check(char a[],int n) {
+		int j=a.length-1;
+		for(int i=0;i<a.length;i++) {
+			if(a[i]!=a[j]) {
+				return false;
+			}
+			j--;
+		}
+		return true;
+	}
+
+}
