@@ -1,0 +1,86 @@
+#include <iostream>  
+using namespace std;  
+class Bus {  
+   public:  
+       string from;
+       string to;
+       int seat[10];
+       int checkSeats(char BusName){
+       	cout<<"Available Seats are"<<"\n";
+       	for(int i=0;i<10;i++){
+       		if(seat[i]!=1){
+       			cout<<i+1<<" <=Available_Seats"<<"\n";
+       		}
+       	}
+       	cout<<"pick up seats:"<<"\n";
+       	int allocatedSeat;
+       	cin>> allocatedSeat;
+       	if(seat[allocatedSeat-1]!=1){
+       		seat[allocatedSeat-1]=1;
+       		cout<<"Seat is Booked in Bus : "<<BusName<< from<<" to "<<to<<"\n";
+       	}
+       	else{
+       		cout<<"Seat is already Booked"<<"\n";
+       		checkSeats(BusName);
+       	}
+       }
+       void route(string source,string destination)    
+        {    
+           from=source;
+           to=destination;
+           char a[5]={'A','B','C','D','E'};
+           for(int i=0;i<5;i++){
+           	cout<<a[i] <<"\n";   
+           }
+           cout<<"Select the bus"<<"\n";
+           char c;
+           cout <<"Enter the Bus Name"<<"\n";
+           cin >> c;
+           switch(c){
+           	case 'A':
+           	checkSeats(c);
+           	break;
+           	case 'B':
+           	checkSeats(c);
+           	break;
+           	case 'C':
+           	checkSeats(c);
+           	break;
+           	case 'D':
+           	checkSeats(c);
+           	break;
+           	case 'E':
+           	checkSeats(c);
+           	break;
+           	default:
+           	cout<<"No Bus is Available"<<"\n";
+           	break;
+           }
+           
+        }
+        
+     
+};  
+int main(void) {  
+    Bus b1;   
+    string from;
+    string to;
+    bool bol=true;
+    while(bol){
+    cout <<"Enter From location:"<<"\n";
+    cin >>from;
+    cout <<"Enter To location:"<<"\n";
+    cin >>to;
+    b1.route(from,to);
+    cout<<"You Want another Booking (y/n)"<<"\n";
+    char c;
+    cin>>c;
+    if((c=='y')||(c=='Y')){
+        bol=true;
+    }
+    else{
+        bol=false;
+    }
+    }
+    return 0;  
+}  
