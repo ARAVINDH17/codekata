@@ -14,11 +14,10 @@ public class Main {
 				str=str+""+a[i]+" ";
 			}
 		}
-		System.out.println(str.trim());
-
-
-	
-		
+		System.out.println(str.trim());	
+		if(str.length()<=0){
+			System.out.println("empty");
+		}	
 	}
 
   }
