@@ -13,7 +13,7 @@ public class Main {
 		String s="";
 		int n=0;
 		for(int i=0;i<str.length();i++){
-			if(str.charAt(i)!=' '){
+			if(str.charAt(i)!=' '&&str.charAt(i)!='.'){
 			s=s+str.charAt(i);
 			}
 			 if(str.charAt(i)==' '||i==str.length()-1){
