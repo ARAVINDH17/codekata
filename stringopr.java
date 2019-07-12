@@ -6,9 +6,14 @@ public class Main {
 		String y=sc.next();
 		int count=0;
 		for(int i=0;i<x.length();i++){
+			try{
 			if(x.charAt(i)==y.charAt(i)){
 			}
 			else{
+				count++;
+			}
+			}
+			catch(Exception e){
 				count++;
 			}
 		}
