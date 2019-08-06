@@ -1,0 +1,7 @@
+hr1, minn1 = input().split()
+hr2, minn2 = input().split()
+s = int(hr1)-int(hr2)
+s=abs(s)
+m = int(minn1)-int(minn2)
+m=abs(m)
+print(str(s)+" "+str(m))
