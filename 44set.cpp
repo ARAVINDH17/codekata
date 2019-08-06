@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 int main() {
-  int n;
-  cin>>n;
-  if(n>=1 && n<=10){
+  int num;
+  cin>>num;
+  if(num>=1 && num<=10){
     cout<<"yes";
   }
   else{cout<<"no";}
