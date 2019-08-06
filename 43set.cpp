@@ -2,7 +2,7 @@
 using namespace std;
 int main() {
   string name1,name2;
-  bool flag=false;
+  bool flags=false;
   cin>>name1;
   cin>>name2;
   if(name1.length()!=name2.length()){
@@ -13,15 +13,15 @@ int main() {
   else{
     for(int i=0;i<name1.length();i++){
       if(name1[i]==name2[i]){
-        flag=true;
+        flags=true;
       }
       else{
-        flag=false;
+        flags=false;
         cout<<name1<<endl;
         break;
       }
     }
-    if(flag==true){
+    if(flags==true){
       if(name1[0]>name2[0]){
         cout<<name1<<endl;
       }
