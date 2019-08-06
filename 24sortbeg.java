@@ -3,24 +3,24 @@ public class Main {
   public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int a[]=new int[n];
+		int b[]=new int[n];
 		for(int i=0;i<n;i++){
-			a[i]=sc.nextInt();
+			b[i]=sc.nextInt();
 		}
 		for(int i=0;i<n;i++){
 			for(int j=i+1;j<n;j++){
-         if(a[i]>a[j]){
-					 int tem=a[i];
-					 a[i]=a[j];
-					 a[j]=tem;
+         if(b[i]>b[j]){
+					 int tem=b[i];
+					 b[i]=b[j];
+					 b[j]=tem;
 				 }
 			}
 		}
-		String s="";
+		String str="";
 		for(int i=0;i<n;i++){
-			s=s+" "+a[i];
+			str=str+" "+b[i];
 		}
-		s=s.trim();
-		System.out.print(s);
+		str=str.trim();
+		System.out.print(str);
   }
 }
