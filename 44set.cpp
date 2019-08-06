@@ -8,4 +8,3 @@ int main() {
   }
   else{cout<<"no";}
 }
-© 2019 GitHub, Inc.
